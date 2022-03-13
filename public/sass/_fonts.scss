@@ -1,0 +1,58 @@
+$fonts: '../fonts/';
+
+@font-face {
+  font-family: 'Interstate';
+  src: local('Interstate Bold'),
+       local('Interstate-Bold'),
+       url($fonts + 'Interstate-Bold/Interstate-Bold.woff2') format('woff2'),
+       url($fonts + 'Interstate-Bold/Interstate-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin interstateBold {
+  font-family: 'Interstate', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GLInterstateRegular';
+  src: local('GLInterstateRegular'),
+       url($fonts + 'GLInterstateRegular/GLInterstateRegular.woff2') format('woff2'),
+       url($fonts + 'GLInterstateRegular/GLInterstateRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin regular {
+  font-family: 'GLInterstateRegular', sans-serif;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GLInterstateBold';
+  src: local('GLInterstateBold'),
+       url($fonts + 'GLInterstateBoldCondenced/GLInterstateBoldCondenced.woff2') format('woff2'),
+       url($fonts + 'GLInterstateBoldCondenced/GLInterstateBoldCondenced.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: 'GLInterstateBold', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GLInterstateLight';
+  src: local('GLInterstateLight'),
+       url($fonts + 'GLInterstateLight/GLInterstateLight.woff2') format('woff2'),
+       url($fonts + 'GLInterstateLight/GLInterstateLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin light {
+  font-family: 'GLInterstateLight', sans-serif;
+  font-weight: 300;
+}

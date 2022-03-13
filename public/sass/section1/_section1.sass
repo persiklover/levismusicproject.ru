@@ -1,0 +1,64 @@
+@import "hero"
+  
+.section1
+  padding-top: 3.4em
+
+  +sm
+    padding-top: 0
+
+  &__title
+    top: 41.5em
+
+  &__hero
+
+    +sm
+      // display: none
+  
+  &__info-block
+    margin: 7.7em 0
+
+    +sm
+      margin: 5em 0
+
+      font-size: .9em
+    
+    +xs
+      font-size: 1em
+  
+  &__btn
+    position: relative
+    z-index: 0
+
+    margin-top: 1em
+
+    text-transform: uppercase
+    text-decoration: underline
+
+    transition: color .3s ease-in
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      z-index: -1
+      left: 0
+      top:  0
+      width:  100%
+      height: 100%
+      background-color: #c4122f
+
+      transform-origin: left
+      transform: scaleX(0)
+
+      transition: transform .3s ease-in
+      will-change: transform 
+
+    +sm
+      margin-left: 0
+
+    &:hover
+      color: white
+      text-decoration: none
+
+      &::before
+        transform: scaleX(1)

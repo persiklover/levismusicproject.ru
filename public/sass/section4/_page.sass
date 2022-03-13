@@ -1,0 +1,469 @@
+.page
+  display: flex
+  align-items: flex-start
+
+  +sm
+    flex-direction: column
+    justify-content: flex-start
+
+  &__aside
+    width: 50%
+    margin-right: 2.5em
+
+    color: #363636
+    +light
+    font-size: 1.6em
+
+    +sm
+      margin-right: 0
+      width: 100%
+
+    &--p5
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      .form-input__wrap,
+      .form-input__wrap input
+
+        +sm
+          width: 100%
+
+    &--p7
+      width: 29.5em
+      border-right: .1em solid #363636
+      margin-right: 2em
+
+      +sm
+        border-right: none
+
+    &-heading
+      display: block
+      margin-bottom: 1.5em
+
+      &--p5
+        flex-shrink: 0
+        margin-bottom: 3em
+
+        font-size: 1.15em
+
+        +sm
+          margin-bottom: 1em
+
+    &-text
+      margin: 0
+      margin-bottom: 1em
+
+      b
+        +interstateBold
+        text-transform: uppercase
+
+      &:last-child
+        margin-bottom: 0
+
+  &-content1
+
+    +sm
+      width: 100%
+
+    .form-input
+      width: 100%
+
+    &__requirements
+      list-style: none
+      padding: 0
+      margin: 0
+
+      +light
+      font-size: 1.6em
+
+      &-title
+        +light
+        font-size: 1.6em
+
+      li
+        display: flex
+
+        &::before
+          content: '—'
+          display: block
+          margin-right: .25em
+    
+    &__links
+      position: relative
+      margin: 3em 0
+
+      .error-msg
+        left:   0
+        bottom: -1.5em
+
+      .form-input__wrap
+        margin-bottom: 1.5em
+  
+    &__next-btn
+
+      +sm
+        margin: 0 auto
+
+  &-content2
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+    &__inputs
+      position: relative
+    
+    .error-msg
+      left: 0
+      bottom: -1em
+
+    &__form-group
+      display: flex
+      align-items: center
+      margin-bottom: 1em
+
+      +sm
+        font-size: 1.75em
+      
+      +xxs
+        font-size: 1.72em
+
+      +light
+      font-size: 2.3em
+
+      &-title
+        display: inline-block
+        width: 8.5em
+      
+    .form-input
+      font-size: 1em
+    
+    &__name-input
+      width: 20em
+
+      +sm
+        width: 16em
+    
+    .date-input
+      display: flex
+      align-items: center
+
+      &__day
+        width: 3em
+      
+      &__month
+        width: 7em
+
+      &__year
+        width: 4.5em
+
+      &__month,
+      &__year
+        margin-left: .75em
+    
+    &__next-btn
+      margin-top: 2em
+
+      +sm
+        margin-left:  auto
+        margin-right: auto
+
+  &-content3
+
+    &__title
+      color: #363636
+      +light
+      font-size: 2.4em
+
+    &__subtitle
+      margin: 0
+
+      font-size: 1.6em
+
+      +sm
+        font-size: 1.4em
+      
+      +xxs
+        font-size: 1.38em
+    
+    &__input
+      display: flex
+      align-items: flex-end
+
+      margin-bottom: 3em
+
+      &:last-child
+        margin-bottom: 0
+
+      .form-input
+        font-size: 2em
+        width: 100%
+
+        &__wrap
+          width: 100%
+
+      &-label
+        flex-shrink: 0
+        display: inline-block
+        margin-right: .5em
+        transform: translateY(.2em)
+
+        font-size: 2.4em
+
+        +sm
+          font-size: 2em
+      
+      &-block
+        position: relative
+        margin-top: 3.5em
+        padding-bottom: 5em
+
+        +sm
+          padding-bottom: 3em
+    
+    .error-msg
+      left: 0
+      bottom: 1em
+      font-size: 1.5em
+  
+    &__next-btn
+
+      +sm
+        margin-left:  auto
+        margin-right: auto
+  
+  &-content4
+
+    &-links
+      position: relative
+
+      list-style: none
+      padding: 0
+      margin: 0
+      margin-top: 6.5em
+      display: flex
+      flex-wrap: wrap
+
+      +sm
+        margin-top: 3em
+
+      &__item
+        display: flex
+        width: 28em
+        margin-right:  4em
+        margin-bottom: 4em
+
+        font-size: 1em
+
+        .form-input__wrap,
+        input
+          width: 100%
+    
+    .error-msg
+      left: 0
+      bottom: -.5em
+    
+    &__next-btn
+      margin-top: 1em
+
+      +sm
+        margin-left:  auto
+        margin-right: auto
+  
+  &-content5
+    position: relative
+
+    +sm
+      margin-top: 3.5em
+    
+    .error-msg
+      left: 0
+      bottom: -.5em
+
+      +sm
+        bottom: auto
+        top: 100%
+        margin-top: -3em
+
+    &__checkboxes
+      margin-top: 7em
+      display: flex
+      flex-wrap: wrap
+
+      +sm
+        margin-top: 2.5em
+        padding-bottom: 4em
+      
+      +xxs
+        font-size: .9em
+    
+    &__checkbox
+      width: 40%
+
+      margin-bottom: 1em
+
+      &:nth-child(2n)
+        width: 60%
+
+    &__next-btn
+      margin-top: 4em
+
+      font-size: 1.125em !important
+
+      +sm
+        margin-top: 1.5em
+        margin-left:  auto
+        margin-right: auto
+  
+  &-content6
+    position: relative
+
+    width: 100%
+
+    .error-msg
+      left: 0
+      bottom: 3em
+
+    &__textarea
+      position: relative
+
+      margin-top: 1em
+      border:  0.05em solid #363636 !important
+      outline-offset: -.05em
+      padding: .25em
+      min-width: 95%
+      max-width: 95%
+      min-height: 9.5em
+      max-height: 9.5em
+      overflow-y: scroll
+      resize: none
+
+      color: #363636
+      +light
+      font-size: 1.8em
+
+      &:focus
+        outline: none
+        border-color: #c41230 !important
+
+    &__next-btn
+      margin-top: 1.5em
+
+      +sm
+        margin-left:  auto
+        margin-right: auto
+  
+  &-content7
+    position: relative
+
+    +sm
+      width: 100%
+      border-bottom: 3em
+    
+    .error-msg
+      display: inline-block
+      left: 0
+      top: 100%
+      margin-left: 2em
+      margin-top: .5em
+
+      +sm
+        width: 100%
+        margin-left: 0
+        margin-top: -2.25em
+
+        text-align: center
+
+    &__title
+      +light
+      font-size: 1.25em
+
+    &__subtitle
+      margin: 0
+
+      font-size: 1em
+
+    &__link-block
+      margin-top: 3em
+
+      font-size: .705em
+
+      &-row
+        display: flex
+        margin-bottom: 2.4em
+
+        &--wrap
+          flex-wrap: wrap
+      
+      .form-checkbox__wrap
+        margin-right: 2.5em
+
+        &:last-of-type
+          margin-right: 0
+    
+    &__blogger-name
+      width: 35em !important
+      margin-top:  1em
+      margin-left: 2.25em
+
+      input
+        width: 100%
+
+    &__datause-agree
+      align-items: flex-start !important
+      font-size: 1.37em !important
+
+      a
+        text-decoration: underline
+
+        &:hover
+          text-decoration: none
+
+          +sm
+            text-decoration: underline
+    
+    &__next-btn
+      margin-top:  1em
+      margin-left: 1.5em
+
+      +sm
+        margin-bottom: 2.25em
+        margin-left:  auto
+        margin-right: auto
+
+  &-final
+
+    &__text
+      margin: 0
+      margin-bottom: 3.2em
+
+      color: #363636
+      +light
+      font-size: 2.8em
+
+      +sm
+        margin-bottom: 1.5em
+
+        text-align: center
+
+      a
+        color: #c41230
+
+        &:hover
+          text-decoration: underline
+    
+    &__next-btn
+
+      +sm
+        margin-left:  auto
+        margin-right: auto
+        margin-bottom: 1em
+
+.error-msg
+  position: absolute
+
+  opacity: 0.96
+  color: #c41230
+  +light
+  font-size: 1.5em
+  font-style: italic

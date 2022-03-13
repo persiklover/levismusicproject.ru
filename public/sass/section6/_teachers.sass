@@ -1,0 +1,80 @@
+.teachers
+  position: relative
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+
+  +sm
+    padding: 0 6.5em
+
+  &__item
+    margin-right: 3em
+  
+  .owl-prev,
+  .owl-next
+    position: absolute
+    z-index: 99
+    top: 24.5em
+    left: -7em
+    width: 100%
+
+    display: flex !important
+
+    padding: 0 !important
+    width:  4.2em !important
+    height: 4.2em !important
+    border: 0.2em solid #c41230 !important
+    border-radius: 0 !important
+
+    +sm
+      left: 0
+      top: 18em
+
+    &:hover
+      background-color: #c41230 !important
+
+      span
+        border-color: white
+
+    span
+      display: block
+      margin: auto
+      width:  1.75em
+      height: 1.75em
+      border-left: .2em solid #c41230
+      border-top:  .2em solid #c41230
+
+      transform: translateX(.25em) rotate(-45deg)
+
+  .owl-next
+    left: auto
+    right: -7em
+
+    +sm
+      left: auto
+      right: 0
+
+    span
+      transform: translateX(-.25em) rotate(135deg)
+
+  .owl-dots
+    margin-top: 4em
+
+    +sm
+      margin-top: 1.5em
+    
+    .owl-dot
+      span
+        width:  1.9em
+        height: 1.9em
+        border: 0.2rem solid #c41230
+        background: none
+
+        transition: .3s ease-in
+
+      &:hover span
+        background: rgba(#c41230, .35)
+      
+      &.active span
+        background-color: #c41230

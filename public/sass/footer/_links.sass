@@ -1,0 +1,30 @@
+.links
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  height: 3em
+
+  font-size: 1.7em
+
+  +sm
+    font-size: 1.5em
+    align-content: space-between
+
+  &__item
+    margin-bottom: .5em
+
+    color: #363636
+    +light
+
+    a
+      text-decoration: underline
+
+      &:hover
+        text-decoration: none
+
+    &:nth-child(2n),
+    &:last-child
+      margin-bottom: 0

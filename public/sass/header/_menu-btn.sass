@@ -1,0 +1,43 @@
+.menu-btn
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width:  1em
+  height: 1em
+  background: none
+  border: none
+  padding: 0
+
+  font-size: 5em
+  color: currentColor
+
+  cursor: pointer
+
+  span,
+  span::before,
+  span::after
+    position: absolute
+    left: 50%
+    margin-left: -(.8em / 2)
+    width:  .8em
+    height: .135em
+    background-color: currentColor
+  span
+    &::before,
+    &::after
+      content: ''
+      transition: .3s cubic-bezier(.75,-0.5,0,1.75)
+    &::before
+      margin-top: -.15em - .1em
+    &::after
+      margin-top:  .15em + .1em
+  &--active
+    span
+      background: transparent
+      &::before
+        margin-top: 0
+        transform: rotate(225deg)
+      &::after
+        margin-top: 0
+        transform: rotate(-225deg)

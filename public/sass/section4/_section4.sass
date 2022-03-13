@@ -1,0 +1,25 @@
+@import "page"
+@import "form"
+  
+.section4
+  position: relative
+  z-index: 0
+  padding-top: 10em
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    z-index: -1
+    left: 0
+    top:  42em
+    transform: translateY(-50%)
+    width: 100%
+    height: 32.5em
+    background: url("../img/section4-decor.png") no-repeat center / cover
+
+    +sm
+      display: none
+
+  &__title
+    top: 21em

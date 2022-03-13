@@ -1,0 +1,83 @@
+.steps
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+  justify-content: space-between
+
+  +sm
+    padding: 0 4.5em
+    flex-wrap: wrap
+
+  &__item
+    position: relative
+    width: 18em
+
+    +sm
+      margin-bottom: 4em
+      width: 45%
+
+      &:first-child::before
+        display: none
+
+    &:last-child
+      width: auto
+
+      +sm
+        margin-top: 4.5em
+        margin-bottom: 0
+
+      &::after
+        display: none
+
+    &::before,
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top:  2.5em
+      height: 2.7em
+      width: 11.5em
+      background: url("../img/section5-decor.png") no-repeat left / contain
+
+      +sm
+        background-position: 2em center
+        top: 2.4em
+        height: 2.4em
+        width:  31vw
+        background-repeat: repeat-x
+        z-index: -1
+
+    &::before
+      right: 100%
+      display: none
+
+      +sm
+        display: block
+    
+    &::after
+      left: 12em
+
+      +sm
+        width: 40vw
+
+
+    &-header
+      +interstateBold
+      font-size: 2.2em
+      text-transform: uppercase
+
+      +sm
+        display: inline-block
+        padding: 0 1em
+        background-color: white
+
+    &-content
+      margin: 0
+      margin-top: 1.25em
+
+      +regular
+      font-size: 2em
+
+      +sm
+        padding: 0 1em

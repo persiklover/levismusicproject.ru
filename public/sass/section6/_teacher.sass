@@ -1,0 +1,68 @@
+.teacher
+  position: relative
+  padding-bottom: 17.5em
+
+  &--1 &-info
+    background-image: url("../img/teachers/decor3.png")
+
+  &--2 &-info
+    background-image: url("../img/teachers/decor4.png")
+
+  &--3 &-info
+    background-image: url("../img/teachers/decor3.png")
+
+  &--4 &-info
+    background-image: url("../img/teachers/decor4.png")
+
+  &__photo
+
+  &-info
+    position: absolute
+    z-index: 1
+    right:   -2em
+    top:     25em
+
+    width:  25.3em
+    height: 26.2em
+    padding: 3em 0
+    border: 0.8em solid #c41230
+    background: white url("../img/teachers/decor3.png") no-repeat center 110% / contain
+
+    text-align: center
+
+    +sm
+      right: -2.5em
+      top:     29em
+      font-size: .66em
+    
+    +xs
+      font-size: 1.25vw
+      right: -2em
+
+    +xxs
+      top: 28em
+      right: -3.5em
+  
+  &__name
+    margin: 0
+    margin-bottom: .95em
+
+    +interstateBold
+    font-size: 1.9em
+    text-transform: uppercase
+
+  &__prof
+    +regular
+    font-size: 1.6em
+    text-transform: uppercase
+
+  &__description
+    margin: 0
+    margin-top: 1.5em
+
+    +regular
+    font-size: 1.5em
+    font-weight: 400
+
+    a
+      color: #c41230

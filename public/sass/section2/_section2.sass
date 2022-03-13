@@ -1,0 +1,43 @@
+@import "video"
+@import "slide"
+@import "slider"
+  
+.section2
+  position: relative
+  z-index: 0
+  padding-bottom: 7em
+
+  +sm
+    padding-top: 5em
+    overflow: initial
+
+  &::before,
+  &::after
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 100%
+    background: url("../img/section2-decor1.png") no-repeat center / cover
+
+    display: none
+
+    +sm
+      display: block
+
+    +xs
+      background-position: -4em center
+
+  &::before
+    top:      -30em
+    height: 158.9em
+
+    +xs
+      top: 9vw
+
+  &::after
+    background-image: url("../img/section2-decor2.png")
+    top:       -9em
+    height: 123.2em
+
+    +xs
+      top: 37vw

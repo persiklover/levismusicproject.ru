@@ -1,0 +1,60 @@
+.slide
+  position: relative
+  width: 100%
+
+  &__overlay
+    position: absolute
+    z-index: 2
+    right: 0
+    top:   50%
+    transform: translateY(-50%)
+
+    background: white
+    border: 0.8em solid #c41230
+    padding: 4.5em 5em
+    width:  38.4em
+
+    text-align: center
+
+    +sm
+      right: auto
+      left: 50%
+      top: 23em
+      transform: translateX(-50%)
+
+      width: 46em
+    
+    +xs
+      font-size: 1.5vw
+
+  &__title
+    margin-bottom: 1em
+
+    font-size: 1.8em
+    +bold
+  
+  &__text
+    margin: 0
+    margin-bottom: 1em
+
+    +regular
+    font-size: 1.5em
+
+    &--quote
+      font-family: Georgia, 'Times New Roman', Times, serif
+      font-style: italic
+
+    &:last-child
+      margin-bottom: 0
+    
+    .hashtag
+      color: #c41230
+  
+  img
+    height: 50.85em
+
+    +sm
+      height: auto
+  
+  .reset
+    font-family: sans-serif

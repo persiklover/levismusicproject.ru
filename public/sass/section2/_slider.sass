@@ -1,0 +1,112 @@
+.slider
+  position: relative
+
+  +xs
+    padding: 0 3.25em
+
+  &__counter
+    position: absolute
+    right: 3em
+    top: 0
+
+    color: #9c9c9c
+    +interstateBold
+    font-size: 2.5em
+    text-transform: uppercase
+
+    +sm
+      position: static
+      display: block
+
+      margin-bottom: .6em
+
+  &__item
+    padding-right: 21em
+
+    +sm
+      padding-right: 0
+      padding-bottom: 32em
+    
+    +xs
+      padding-bottom: 45vw
+
+  .owl-prev,
+  .owl-next
+    position: absolute
+    z-index: 99
+    top: 24.5em
+    left: -7em
+    width: 100%
+
+    display: flex !important
+
+    padding: 0 !important
+    width:  4.2em !important
+    height: 4.2em !important
+    border: 0.2em solid #c41230 !important
+    border-radius: 0 !important
+    background-color: white !important
+
+    +sm
+      left: -3em
+      top: 12em
+    
+    +xs
+      top: 21vw
+      left: 0
+    
+    +xxs
+      top: 19vw
+
+    &:hover
+      background-color: #c41230 !important
+
+      span
+        border-color: white
+
+    span
+      display: block
+      margin: auto
+      width:  1.75em
+      height: 1.75em
+      border-left: .2em solid #c41230
+      border-top:  .2em solid #c41230
+
+      transform: translateX(.25em) rotate(-45deg)
+
+  .owl-next
+    left: auto
+    right: -7em
+
+    +sm
+      left: auto
+      right: -3em
+    
+    +xs
+      left: auto
+      right: 0
+
+    span
+      transform: translateX(-.25em) rotate(135deg)
+
+  .owl-dots
+    margin-top: 1em
+    padding-right: 22em
+
+    +sm
+      padding-right: 0
+
+    .owl-dot
+      span
+        width:  1.9em
+        height: 1.9em
+        border: 0.2rem solid #c41230
+        background: none
+
+        transition: .3s ease-in
+
+      &:hover span
+        background: rgba(#c41230, .35)
+      
+      &.active span
+        background-color: #c41230

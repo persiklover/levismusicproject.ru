@@ -1,0 +1,62 @@
+.nav
+  +light
+  font-size: 1.4em
+  letter-spacing: 0.02em
+  text-transform: uppercase
+
+  +sm
+    font-size: 3em
+
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+
+    +sm
+      flex-direction: column
+      align-items: center
+      padding-top: 4.5em
+
+      position: absolute
+      z-index: 99
+      left: 0
+      top:  0
+      width:  100%
+      height: 100vh
+      background-color: #c31230
+
+      pointer-events: none
+      opacity: 0
+
+      transition: opacity .3s ease-in
+      will-change: opacity
+
+      &.active
+        pointer-events: all
+        opacity: 1
+  
+  &__item
+    margin-right: 1.5em
+    opacity: .5
+
+    transition: opacity .3s ease
+
+    &:hover
+      opacity: 1
+
+    &:last-child
+      margin-right: 0
+    
+    +sm
+      margin-right: 0
+      margin-bottom: 2.6em
+
+      &:last-child
+        margin-bottom: 0
+    
+    a
+      padding: .25em 0
+
+      +sm
+        padding: 0

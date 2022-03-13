@@ -1,0 +1,157 @@
+.section
+  overflow-y: hidden
+
+  .container
+    position: relative
+  
+  &__wrap
+    padding: 0 5.7em
+
+    +sm
+      padding: 0
+  
+  &__heading
+    margin: 0
+    margin-bottom: .6em
+
+    +interstateBold
+    font-size: 3.4em
+    text-transform: uppercase
+  
+  &__subtitle
+    margin: 0
+    margin-bottom: 1.3em
+
+    +light
+    font-size: 2em
+    text-transform: uppercase
+  
+  &__title
+    position: absolute
+    left: -3em
+    top:  50%
+
+    color: #8a8a8a
+    +light
+    font-size: 1.6em
+    text-transform: uppercase
+    letter-spacing: 0.04em
+
+    transform: rotate(-90deg)
+    transform-origin: left top
+
+    +sm
+      display: none
+
+    &::before,
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width:  100vh
+      height: .1em
+      background-color: currentColor
+      opacity: 0.4
+
+    &::before
+      right: 100%
+      margin-right: .75em
+
+    &::after
+      left: 100%
+      margin-left: .75em
+
+.info-block
+  font-size: .95em
+
+  +xxs
+    font-size: .9em
+
+  &__img
+    float: right
+    max-width: 100%
+    width: 54.2em
+
+    +sm
+      float: none
+      display: none
+    
+    +xs
+      width: 100%
+    
+    &--mobile
+      display: none
+      margin-bottom: 2em
+
+      +sm
+        display: block
+  
+  &__text
+    margin: 0
+    margin-bottom: 1.5em
+
+    color: #363636
+    +light
+    font-size: 1.9em
+
+    &:last-of-type
+      margin-bottom: 0
+    
+    a
+      text-decoration: underline
+
+      &:hover
+        text-decoration: none
+
+        +sm
+          text-decoration: underline
+
+.btn
+  border: 0.2rem solid #c4122f
+  background: none
+  padding: .5em .5em
+
+  color: #c31230
+  +regular
+  font-size: 1.9em
+  line-height: 1
+
+  cursor: pointer
+
+.font-fix
+  // background-color: pink
+  font-family: Futura
+  font-size: .95em
+  font-weight: 500
+
+.hide-sm
+
+  +sm
+    display: none
+
+.required
+  color: #c41230
+
+input
+
+  &:invalid,
+  &:-moz-ui-invalid
+    outline: none
+    box-shadow: none
+    -moz-box-shadow: none
+    -webkit-box-shadow: none
+  
+  &[type="number"]
+    -moz-appearance: textfield
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button
+      -webkit-appearance: none
+
+img
+  user-select: none
+
+::selection
+  background-color: lighten(#c41230, 40)

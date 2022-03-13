@@ -1,0 +1,61 @@
+.participants
+  list-style: none
+  padding: 0
+  display: flex
+
+  +sm
+    flex-direction: column
+
+  &__item
+    position: relative
+
+    flex-grow: 1
+    height: 46.5em
+    margin-right: 2em
+    background: url("../img/participants1.png") no-repeat left / contain
+
+    &:nth-child(2)
+      background-image: url("../img/participants2.png")
+
+    &:nth-child(3)
+      background-image: url("../img/participants3.png")
+      margin-right: 0
+    
+    +sm
+      height: 42em
+      margin-right: 0
+      margin-bottom: 2.5em
+
+      &:last-child
+        margin-bottom: 0
+
+    &-text
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      padding: 0
+      margin: 0
+      width:  14.8em
+      height: 11em
+      background-color: white
+      border: 0.3em solid #c41230
+
+      color: #363636
+      +regular
+      font-size: 1.8em
+      text-align: center
+
+      +sm
+        right: auto
+        left: 14em
+      
+      +xxs
+        left: auto
+        right: 1em
+
+        font-size: 2em

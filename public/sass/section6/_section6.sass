@@ -1,0 +1,28 @@
+@import "teacher"
+@import "teachers"
+  
+.section6
+  position: relative
+  z-index: 0
+
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    z-index: -1
+    left: 0
+    top:  15em
+    width:  100%
+    height: 100%
+    background: url("../img/section6-decor.png") no-repeat center /  102%
+
+    +sm
+      display: none
+
+  &__title
+    top: 21em
+
+  &__heading
+
+    +sm
+      margin-bottom: 1em
